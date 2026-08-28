@@ -71,4 +71,37 @@ export class Schema {
             throw new Error(errors.join(", "));
         }
     }
+
+    applyDefaults(obj) {
+        const result = { ...obj };
+
+        for (const field in this.definition) {
+            const rules = this.definition[field];
+            const currentValue = result[field];
+
+            if (currentValue === undefined) {
+                if (rules.default !== undefined) {
+                    if (typeof rules.default === "function") {
+                        result[field] = rules.default();
+                    } else {
+                        result[field] = rules.default;
+                    }
+                }
+            }
+
+            if (rules.trim) {
+                if (typeof result[field] === "string") {
+                    result[field] = result[field].trim();
+                }
+            }
+
+            if (rules.lowercase) {
+                if (typeof result[field] === "string") {
+                    result[field] = result[field].toLowerCase();
+                }
+            }
+        }
+
+        return result;
+    }
 }
