@@ -1,0 +1,36 @@
+{
+    "User": [
+        {
+            "_id": "1787766617506",
+            "name": "Shawn",
+            "email": "shawn@gmail.com",
+            "role": "admin"
+        },
+        {
+            "_id": "1787941736337",
+            "name": "Tahmid",
+            "email": "tahmid@gmail.com",
+            "role": "user"
+        },
+        {
+            "_id": "1787941761020",
+            "name": "Tahmid",
+            "email": "tahmid@gmail.com",
+            "role": "user"
+        },
+        {
+            "_id": "1787941779872",
+            "name": "Tahmid",
+            "email": "tahmid@gmail.com",
+            "role": "user"
+        }
+    ],
+    "Product": [
+        {
+            "_id": "1787768248491",
+            "name": "Laptop",
+            "price": "50000",
+            "category": "general"
+        }
+    ]
+}
