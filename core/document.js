@@ -1,4 +1,4 @@
-import { saveDatabase } from "./db.js";
+import { saveDatabase } from "./database.js";
 
 export class Document {
     async save() {
