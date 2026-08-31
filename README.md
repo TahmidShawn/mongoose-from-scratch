@@ -2,6 +2,14 @@
 
 A simplified Mongoose-like library built to understand how models, schemas, documents, validation, and database operations work internally.
 
+## Installation
+
+Install the package from npm:
+
+```bash
+npm install custom-mongoose-tahmid
+```
+
 ## Currently Supported
 
 ### Schema Options
@@ -45,20 +53,4 @@ Supports custom static methods through `schema.statics`.
 
 ### Database
 
-Data is currently persisted in a local `data.json` file, with a separate collection created for each model.
-
-## Installation
-
-Install the package from npm:
-
-```bash
-npm install custom-mongoose-tahmid
-```
-
-Import the custom Mongoose instance:
-
-```js
-import mongoose from "custom-mongoose-tahmid";
-```
-
-You are now ready to use the custom Mongoose implementation.
+Data is currently persisted to a local data.json file within the package, with a separate collection created for each model.
