@@ -1,6 +1,6 @@
 {
     "name": "custom-mongoose-tahmid",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A simplified Mongoose-like library built from scratch",
     "main": "./core/mongoose.js",
     "keywords": [
