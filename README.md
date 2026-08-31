@@ -10,6 +10,12 @@ Install the package from npm:
 npm install custom-mongoose-tahmid
 ```
 
+Import the custom Mongoose instance:
+
+```js
+import mongoose from "custom-mongoose-tahmid";
+```
+
 ## Currently Supported
 
 ### Schema Options
@@ -53,4 +59,4 @@ Supports custom static methods through `schema.statics`.
 
 ### Database
 
-Data is currently persisted to a local data.json file within the package, with a separate collection created for each model.
+Data is currently persisted to a local `data.json` file within the package, with a separate collection created for each model.
