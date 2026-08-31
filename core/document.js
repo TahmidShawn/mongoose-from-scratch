@@ -35,4 +35,7 @@ export class Document {
 
         return true;
     }
+toJSON() {
+        return this._doc;
+    }
 }

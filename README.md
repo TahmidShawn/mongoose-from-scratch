@@ -8,32 +8,32 @@ A simplified Mongoose-like library built to understand how models, schemas, docu
 
 The following schema options are currently supported:
 
-- `type: String`
-- `required`
-- `default`
-- `minLength`
-- `maxLength`
-- `enum`
-- `trim`
-- `lowercase`
-- `timestamps: true`
+* `type: String`
+* `required`
+* `default`
+* `minLength`
+* `maxLength`
+* `enum`
+* `trim`
+* `lowercase`
+* `timestamps: true`
 
 ### Model Methods
 
 Each model currently supports:
 
-- `create()`
-- `find()`
-- `findById()`
-- `findByIdAndUpdate()`
-- `findByIdAndDelete()`
+* `create()`
+* `find()`
+* `findById()`
+* `findByIdAndUpdate()`
+* `findByIdAndDelete()`
 
 ### Document Methods
 
 Each document currently supports:
 
-- `save()`
-- `validate()`
+* `save()`
+* `validate()`
 
 ### Custom Schema Methods
 
@@ -49,18 +49,16 @@ Data is currently persisted in a local `data.json` file, with a separate collect
 
 ## Installation
 
-Clone the repository:
+Install the package from npm:
 
 ```bash
-git clone https://github.com/TahmidShawn/mongoose-from-scratch.git
+npm install custom-mongoose-tahmid
 ```
 
-Copy the `core` folder into your project.
-
-Import `mongoose.js` from the copied `core` folder:
+Import the custom Mongoose instance:
 
 ```js
-import mongoose from "../core/mongoose.js";
+import mongoose from "custom-mongoose-tahmid";
 ```
 
 You are now ready to use the custom Mongoose implementation.
